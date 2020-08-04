@@ -1,0 +1,34 @@
+﻿@model BoxOfficeASP.Models.Seance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Seance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieTitle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SeanceId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
